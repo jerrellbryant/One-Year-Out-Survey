@@ -1,0 +1,2 @@
+# One-Year-Out-Survey
+A survey sent to subscribers who have been receiving email newsletter for over a year. The premise is to receive feedback from this group of subscribers to determine the content they'd like to receive, time preference, their age group and other sports they'd like to see in newsletters from NBCSports Gold. The survey is meant to be be fun to complete similar to a Buzzfeed survey.
