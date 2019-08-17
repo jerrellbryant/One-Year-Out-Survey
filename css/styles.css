@@ -1,0 +1,511 @@
+* {
+    box-sizing: content-box;
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.image__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+}
+
+.messages-subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 11px 0 0px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.my_hover {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.my_hover:hover {
+    height: 200px;
+    width: 200px;
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.subtitle {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.title, .subtitle {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.questions-container {
+    width: 42.94rem;
+    margin: 0 auto;
+}
+
+/******* ageRange-questions & recommend-questions Styles *****/
+
+.age, .recommend, .other-sports, .yes-questions-btn, .no-questions-btn {
+    padding: 0;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-direction: row;
+    justify-content: space-around;
+}
+
+.age__input, .recommend__input, .other-sports__input {
+    height: 200px;
+    width: 200px;
+}
+
+.age__selection, .recommend__selection, .other-sports__selection {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    background-color: #ccc;
+    border: 1px solid transparent;
+    -webkit-transition: border 0.1s linear, box-shadow 0.1s linear;
+    -moz-transition: border 0.1s linear, box-shadow 0.1s linear;
+    transition: border 0.1s linear, box-shadow 0.1s linear;
+}
+
+.age__selection.active, .recommend__selection.active, .other-sports__selection.active {
+    border-color: #88f078;
+    -webkit-box-shadow: 0 0 5px #88f078;
+    -moz-box-shadow: 0 0 5px #88f078;
+    box-shadow: 0 0 5px #88f078;
+}
+
+.other-sports, .recommend {
+    width: 450px;
+}
+
+.recommend li:last-child {
+    align-self: flex-start;
+}
+
+.yes-questions-btn, .no-questions-btn {
+    width: 330px;
+}
+
+/********** contentPref-questions Styles *************/
+
+.contentListAnswer {
+    cursor: pointer;
+    background: #f2f2f2;
+    padding: 9px;
+    margin-top: 12px;
+    border: 1px solid #d8d8d8;
+    transition: background-color 0.1s linear;
+    -webkit-transition: background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    -o-transition: background-color 0.1s linear;
+    width: 100%;
+    max-width: 332px;
+    margin-left: 128px;
+}
+
+.contentListAnswer:hover {
+    background: #88f078;
+}
+
+.contentListText {
+    margin-left: 8px;
+    font-size: 19px;
+    color: #3d3d3d;
+}
+
+.correctAnswer {
+    background: #88f078;
+}
+
+.fa.fa-check-circle, .fa.fa-times-circle {
+    padding-right: 10px;
+}
+
+.fade {
+    opacity: .6;
+    cursor: default;
+}
+
+/*********** free form message styles ******/
+
+.clickable-questions {
+    flex: 1;
+    order: 2;
+}
+
+#features-clickWordList > li, #signup-clickWordList > li, #dislike-clickWordList > li {
+    cursor: pointer;
+    padding-bottom: 13px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 90%;
+    line-height: 0;
+    padding: 5px;
+    width: 320px;
+}
+
+.form {
+    display: flex;
+    display: -ms-flex;
+}
+
+.message {
+    display: flex;
+    display: -ms-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    order: 1;
+}
+
+.message > textarea {
+    flex: 1;
+    min-width: 18rem;
+    max-height: 12rem;
+    font-size: 12px;
+    padding: 10px;
+    outline: none;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+}
+
+legend {
+    color: #333;
+}
+
+/********* button styles *********/
+
+.btn {
+    background: transparent;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 11px 0 0 2px;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    top: 0;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.btn-pref {
+    margin-left: 128px;
+}
+
+.yellow {
+    background: #fac75a;
+    color: #fff;
+    box-shadow: 0 3px 0 #f9b629;
+    -webkit-box-shadow: 0 3px 0 #f9b629;
+    -moz-box-shadow: 0 3px 0 #f9b629;
+    -o-box-shadow: 0 3px 0 #f9b629;
+}
+
+.yellow:hover {
+    background: #fce17a;
+}
+
+.yellow:active, .yellow:focus {
+    background: #fac24b;
+}
+
+.yellow.press-me:active {
+    box-shadow: 0 2px 0 #f9b629;
+    -webkit-box-shadow: 0 2px 0 #f9b629;
+    -moz-box-shadow: 0 2px 0 #f9b629;
+    -o-box-shadow: 0 2px 0 #f9b629;
+
+}
+
+.yellow.transparent {
+    border-color: #fac75a;
+}
+
+.yellow.effect-left:after, .yellow.effect-right:after, .yellow.effect-up:after, .yellow.effect-down:after, .yellow.effect-horiz:after, .yellow.effect-vart:after, .yellow.effect-box:after, .yellow.effect-down-left:after, .yellow.effect-up-right:after {
+    background: #fce17a;
+}
+
+.yellow.effect-glow:hover {
+    box-shadow: 0 0 10px 0 #fac75a inset, 0 0 10px 2px #fac75a;
+}
+
+
+/********** Responsive Styles *************/
+
+/*** tablet ***/
+@media only screen and (max-width: 768px) {
+
+    .btn-pref {
+        margin-left: 35px!important;
+    }
+
+    .contentListAnswer {
+        width: 100%;
+        max-width: 281px;
+        margin-left: 32px;
+    }
+
+    .form {
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        -ms-flex-flow: row wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-direction: row;
+    }
+
+    .message {
+        flex-wrap: nowrap;
+    }
+
+    .message {
+        margin-bottom: 22px;
+    }
+
+    /*.message-container {
+          width: 480px;
+          margin: 0 auto;
+      }*/
+
+    .image {
+        max-width: 300px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 21px;
+    }
+
+    .questions-container {
+        width: 448px;
+    }
+}
+
+/*** phone **/
+@media only screen and (max-width: 600px) {
+
+
+    .age, .recommend, .other-sports, .yes-questions-btn, .no-questions-btn {
+        padding-bottom: 5rem;
+    }
+
+    .age__input, .recommend__input, .other-sports__input {
+        height: 150px;
+        width: 150px;
+    }
+
+    .age__selection, .recommend__selection, .other-sports__selection {
+        height: 150px;
+        width: 150px;
+    }
+
+    .btn-pref {
+        margin: 11px 0 0 25px!important;
+    }
+
+    .contentListAnswer {
+        max-width: 183px;
+        width: 100%;
+        margin-left: 25px
+    }
+
+    .contentListText {
+        font-size: 16px;
+    }
+
+    #features-clickWordList > li, #dislike-clickWordList > li, #signup-clickWordList > li {
+        font-size: 12px;
+    }
+
+    .image {
+        max-width: 200px;
+    }
+
+    .messages-subtitle {
+        font-size: 13px;
+        margin: 2px 0 30px 0;
+        padding: 0;
+    }
+
+    .message > textarea {
+        min-height: 6rem;
+    }
+
+    .my_hover:hover {
+        height: 150px;
+        width: 150px;
+    }
+
+    .other-sports, .recommend {
+        width: 330px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 12px;
+        padding: 0 32px;
+    }
+
+    .title {
+        font-size: 17px;
+        padding-top: 20px;
+    }
+
+    .questions-container, .yes-questions-btn, .no-questions-btn {
+        width: 330px;
+    }
+}
+
+/*mobile device landscape only*/
+@media (min-device-width: 481px) and (max-device-width: 823px) and (orientation: landscape) {
+
+    .age__selection, .recommend__selection, .other-sports__selection {
+        width: 150px;
+        height: 150px;
+    }
+
+    .age__input, .recommend__input, .other-sports__input {
+        height: 150px;
+        width: 150px;
+    }
+
+    .ageRange-questions {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        padding: 10px 7px;
+        font-size: 15px;
+    }
+
+    #features-clickWordList > li, #signup-clickWordList > li, #dislike-clickWordList > li {
+        cursor: pointer;
+        padding-bottom: 10px;
+        line-height: 1.5;
+        font-size: 11px;
+    }
+
+    fieldset {
+        font-size: 80%;
+        line-height: 0;
+        padding: 5px 5px 0 0;
+        width: 261px;
+    }
+
+    .form {
+        flex-direction: row;
+        display: -ms-flex;
+        flex-wrap: nowrap;
+    }
+
+    .image {
+        max-width: 250px;
+    }
+
+    .message {
+        flex-direction: unset;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+
+    .message-container {
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    .message > textarea {
+
+        min-width: 13rem;
+        max-height: 12rem;
+        font-size: 12px;
+        padding: 10px;
+        outline: none;
+        margin-right: 11px;
+
+    }
+
+    .messages-subtitle {
+        font-size: 11px;
+        margin: 11px 0 0 0;
+        padding: 0!important;
+    }
+
+    .other-sports, .recommend {
+        width: 340px;
+    }
+
+    .subtitle {
+        font-size: 11px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .yes-questions-btn, .no-questions-btn {
+        width: 261px;
+    }
+}
